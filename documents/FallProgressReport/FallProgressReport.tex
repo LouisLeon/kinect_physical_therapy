@@ -1,0 +1,161 @@
+\documentclass[onecolumn, draftclsnofoot,10pt, compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{pgfgantt}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{tabu}
+\usepackage{geometry}
+\geometry{textheight=9.5in, textwidth=7in, margin=0.75in}
+
+% 1. Fill in these details
+\def \CapstoneTeamName{     TeamName}
+\def \CapstoneTeamNumber{       24}
+\def \GroupMemberOne{            Ciin S. Dim}
+\def \GroupMemberTwo{           Louis Leon}
+\def \GroupMemberThree{         Karl Popper}
+\def \CapstoneProjectName{      Kinect Based Virtual Therapy Solution}
+\def \CapstoneSponsorCompany{   OSU Healthcare Systems Engineering Lab}
+\def \CapstoneSponsorPerson{        Mehmet Serdar Kilinc}
+
+% 2. Uncomment the appropriate line below so that the document type works
+\def \DocType{      %Problem Statement
+                %Requirements Document
+                %Technology Review
+                %Design Document
+                Progress Report
+                }
+            
+\newcommand{\NameSigPair}[1]{\par
+\makebox[2.75in][r]{#1} \hfil   \makebox[3.25in]{\makebox[2.25in]{\hrulefill} \hfill        \makebox[.75in]{\hrulefill}}
+\par\vspace{-12pt} \textit{\tiny\noindent
+\makebox[2.75in]{} \hfil        \makebox[3.25in]{\makebox[2.25in][r]{Signature} \hfill  \makebox[.75in][r]{Date}}}}
+% 3. If the document is not to be signed, uncomment the RENEWcommand below
+\renewcommand{\NameSigPair}[1]{#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+    \pagenumbering{gobble}
+    \begin{singlespace}
+        %\includegraphics[height=4cm]{coe_v_spot1}
+        \hfill 
+        % 4. If you have a logo, use this includegraphics command to put it on the coversheet.
+        %\includegraphics[height=4cm]{CompanyLogo}   
+        \par\vspace{.2in}
+        \centering
+        \scshape{
+            \huge CS Capstone\DocType \par
+            {\large Fall Term}\par
+            {\large\today}\par
+            \vspace{.5in}
+            \textbf{\Huge\CapstoneProjectName}\par
+            \vfill
+            {\large Prepared for}\par
+            \Huge \CapstoneSponsorCompany\par
+            \vspace{5pt}
+            {\Large\NameSigPair{\CapstoneSponsorPerson}\par}
+            {\large Prepared by }\par
+            Group\CapstoneTeamNumber\par
+            % 5. comment out the line below this one if you do not wish to name your team
+            %\CapstoneTeamName\par 
+            \vspace{5pt}
+            {\Large
+                \NameSigPair{\GroupMemberOne}\par
+                \NameSigPair{\GroupMemberTwo}\par
+            }
+            \vspace{20pt}
+        }
+        \begin{abstract}
+        % 6. Fill in your abstract    
+        The purpose of this document is to summarize the progress made towards this project over the last three months. The document includes the project purpose, goals, problems impeding progress and solutions, current project state, and a retrospective table providing a week-by-week summary.
+    \end{abstract}     
+    \end{singlespace}
+\end{titlepage}
+\newpage
+\pagenumbering{arabic}
+\tableofcontents
+% 7. uncomment this (if applicable). Consider adding a page break.
+%\listoffigures
+%\listoftables
+\clearpage
+
+% 8. now you write!
+\section{Purpose}
+The purpose of the Kinect Based Physical Therapy Solution project is to provide a solution for physical therapy patients diagnosed with Parkinson's disease perform in-home therapy exercises. This solution will not only allow for an interactive way of completing a patient's required home therapy but will provide a way for their physical therapist to track their progress and monitor their exercises.
+
+\section{Goals}
+The goal of this project is to implement the main functions of the product. A user interface should be developed that allows users to interact with the program. The interface will allow them to select exercises from a menu, hear and read instructions that guide them through exercises, and receive feedback during exercise to encourage proper movements. We will also implement the function to export node data to a .csv file. Physical therapists should be able to set the frequency and duration of data collection. Physical therapists should also be able to view a data summary/report of the patients' data.
+
+\section{Problems Impeding Progress and Solutions}
+One of our initial problems for our project was finding a suitable Kinect Sensor to use for development. We were faced with the desicion of asking our client to purchase one or get one ourselves. After speaking with our professor he let us know we could borrow one from him once development has started for our project.
+
+\section{Current Project State}
+The project is now ready to move on to the implementation stage. Fall term was mainly focused on planning and designing the product. We met with our client to clarify the functionality of the product and what features need to be implemented. We now have an idea of what to implement and how to implement them.
+
+\section{Weekly Summaries}
+\subsection{Week 1}
+We submitted our preferences for projects this week. We also set up our OneNote blogs and began filling in our biographies and preparing resumes to bring in for peer review. 
+
+\subsection{Week 2}
+Our team received our project assignments and met for the first time to discuss meeting schedules and details about the project. We sent an email to our client asking to hold a meeting this week to go over project goals and deliverables. We set up meeting times to be bi-weekly and discussed our first task of becoming familiar with the Kinect SDK for Windows. 
+
+\subsection{Week 3}
+We began writing the Problem Statement for our project and had our first meeting with our TA where we discussed the overall project and defined some initial steps to take towards its development. By the end of the week, we were able to complete the Problem Statement and show it to our client for their approval. We also set up our project GitHub repository and shared it with our client and instructors. 
+
+One of problems we faced this week was finding a suitable Kinect Sensor to use for our development. After asking one of the instructors, they mentioned they could let us borrow one once implementation begins. 
+
+\subsection{Week 4}
+During week four, we had to alter our GitHub repository structure such that there were two directories, one containing the source code and the other containing our documentation for the project. We also had a meeting with our client where we discussed our goals for Fall term. An important mention was for us to meet with a physical therapist from the Samaritan Physical Rehabilitation Clinic in Corvallis, Oregon. Another goal for us was to observe a patient receiving physical therapy treatment. 
+
+\subsection{Week 5}
+We began forming requirements for the Requirements Document and made another OneNote notebook where we can collaborate on documents before submitting them. Later in the week we had a meeting with the physical therapists at the Samaritan Clinic and discussed future meetings, observations, and any requirements for our project. We were informed that patient observations would be possible by signing and reading an online form beforehand. By the end of the week our Requirements Document rough draft was finished and submitted. 
+ 
+\subsection{Week 6}
+We attended Thursday lecture and took notes on some steps to use for the approach on our project relating to research oriented design. We also received some helpful feedback from our client and instructors on our Requirements Document. After making some slight modifications to the document, we submitted the final draft. We also got approval to observe a patient the following week and finished signing any required forms.  
+
+\subsection{Week 7}
+This was the week of patient observation. It was a very important step in our progress and project. The therapy session went smoothly and informed us a lot about Parkinson's  Disease and its symptoms. We were able to see the patients movements for each of the required exercises and gained knowledge about body positioning and posture. Additionally, we began working on our individual Technology Reviews.      
+
+\subsection{Week 8}
+In class, we had a peer review session for our Technology Review documents. We brought in hard-copies and submitted them at the end of class. We also had another meeting with our client where they clarified the data collection functionality and user interface options. We shared our information about patient observation and our client agreed about our progress and which exercises where good candidates for the software.  
+
+\subsection{Week 9}
+Thanksgiving week meant our meetings were canceled for the week, but we were able to plan our task list for the upcoming weeks in the term. We discussed the Progress Report and presentation. We also submitted our individual Technology Reviews. 
+
+\subsection{Week 10}
+Work began for the Design Document of our project. We outlined the different sections of the design document and set up the required files and bibliography. We continued working on the Design Document throughout the week as well as the Progress Report. We made some decisions about how we were going to approach the Progress Report which included a shared Google Slides presentation and the combination of the two of our presentation videos. We did not manage to send client approval in time to receive feedback and make changes however the deadline was moved to Winter term. 
+
+\section{Retrospective Table}
+        \begin{tabu} to \hsize {|X|X|X|X|}
+        \hline
+    \textbf{Week} & \textbf{Positives} & \textbf{Deltas} & \textbf{Actions}\\
+        \hline
+        1 & Submitted project preferences & Get assigned to a project & Wait\\
+        \hline
+        2 & Got project assigned met with group. First meeting with client to talk about general project goals and deliverables. & Get a better idea of the project goals & Meet with client\\
+        \hline
+        3 & Wrote Problem Statement and got client approval. Set up GitHub repository and shared with client and instructors. & Complete Problem Statement assignment & Compile final draft out of rough drafts, get client approval.\\
+        \hline
+        4 & Met with client to outline short term (fall term) goals & Be able to observe physical therapy patients & Got approval to observe physical therapy patients\\
+        \hline
+        5 & Met with Samaritan physical therapists to talk about future meetings, observations, and needs for our project & Complete Requirements document & Completed Requirements document\\
+        \hline
+        6 & Learned our project isn't actually a research project. It is developing a product & Client wants additional functionality of data summary/report & Added new functionality to Requirements doc\\
+        \hline
+        7 & Observed a Parkinson's Disease patient during physical therapy session at Samaritan & Begin Technology Review document & Brainstormed ideas for components in Tech Review\\
+        \hline
+        8 & Cleared up data collection functionality and needs. Outline the contents of data summary page. Clarified user interface options. & Finalize Technology Review & Wrote and peer-reviewed Technology Review doc\\
+        \hline
+        9 & Submitted final drafts of Technology Review & Celebrate holiday & Ate lots of food\\
+        \hline
+        10 & Completed Design document. Began working on the Progress Report and presentation. & Complete Progress Report and presentation & Completed Progress Report and presentation \\
+        \hline
+
+
+
+\end{tabu}
+
+
+
+
+\end{document}
